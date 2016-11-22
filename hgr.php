@@ -8,6 +8,9 @@ Author: honeyonsys
 Author URI: http://honeyonsys.github.io
 License: GPL2
 */ 
+// Block direct requests
+if ( !defined('ABSPATH') )
+	die('-1');
 
 $siteurl = get_option('siteurl');
 define('HGR_FOLDER', dirname(plugin_basename(__FILE__)));
